@@ -3,6 +3,20 @@
     "contentVersion": "1.0.0.0",
     "parameters": {},
     "variables": {},
-    "resources": [],
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2015-06-15",
+            "name": "labcentralarmstg",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "displayName": "labcentralarmstg"
+            },
+            "properties": {
+                "accountType": "Standard_LRS"
+            
+            }
+        }
+    ],
     "outputs": {}
 }
